@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Spotify from './Spotify';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Spotify />
+      <Navbar />
     </div>
   );
 }
