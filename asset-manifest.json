@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/SpotifyAPITest/static/css/main.c3f685fc.css",
-    "main.js": "/SpotifyAPITest/static/js/main.7610ae62.js",
+    "main.css": "/SpotifyAPITest/static/css/main.ce7d2b8b.css",
+    "main.js": "/SpotifyAPITest/static/js/main.250483ab.js",
     "static/js/453.683f95a5.chunk.js": "/SpotifyAPITest/static/js/453.683f95a5.chunk.js",
-    "static/media/logo.svg": "/SpotifyAPITest/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SpotifyAPITest/index.html",
-    "main.c3f685fc.css.map": "/SpotifyAPITest/static/css/main.c3f685fc.css.map",
-    "main.7610ae62.js.map": "/SpotifyAPITest/static/js/main.7610ae62.js.map",
+    "main.ce7d2b8b.css.map": "/SpotifyAPITest/static/css/main.ce7d2b8b.css.map",
+    "main.250483ab.js.map": "/SpotifyAPITest/static/js/main.250483ab.js.map",
     "453.683f95a5.chunk.js.map": "/SpotifyAPITest/static/js/453.683f95a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3f685fc.css",
-    "static/js/main.7610ae62.js"
+    "static/css/main.ce7d2b8b.css",
+    "static/js/main.250483ab.js"
   ]
 }
