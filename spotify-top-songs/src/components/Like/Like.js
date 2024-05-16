@@ -3,19 +3,18 @@ import LikedIcon from '../Like/LikedIcon.jsx';
 import UnlikedIcon from '../Like/UnlikedIcon.jsx';
 
 const Like = ({ songId }) => {
-  const [liked, setLiked] = useState(() => {
-    const likedSongs = JSON.parse(localStorage.getItem('likedSongs')) || {};
-    return likedSongs[songId] || false;
-  });
+  const [liked, setLiked] = useState(false);
 
   useEffect(() => {
-    const likedSongs = JSON.parse(localStorage.getItem('likedSongs')) || {};
-    likedSongs[songId] = liked;
-    localStorage.setItem('likedSongs', JSON.stringify(likedSongs));
-  }, [liked, songId]);
+    const playlist = JSON.parse(localStorage.getItem('playlist')) || [];
+    const song = playlist.find(song => song.id === songId);
+    if (song && song.liked) {
+      setLiked(true);
+    }
+  }, [songId]);
 
   const toggleLiked = () => {
-    setLiked(!liked);
+    setLiked(prevLiked => !prevLiked);
   };
 
   return (
