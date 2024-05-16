@@ -1,3 +1,13 @@
+.dark {
+  background-color: #355362; /* darkGray */
+  color: #FFFFFF; /* Text color for dark mode */
+}
+
+.light {
+  background-color: #FFFCF1; /* lightGray */
+  color: #000000; /* Text color for light mode */
+}
+
 
 body {
   margin: 0;
@@ -9,15 +19,6 @@ body {
   padding: 20px;
 }
 
-.dark {
-  background-color: #222;
-  color: #fff;
-}
-
-.light {
-  background-color: #fff;
-  color: #222;
-}
 
 button {
   padding: 10px 20px;

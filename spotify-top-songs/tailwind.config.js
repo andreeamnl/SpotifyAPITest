@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        darkGray: '#1F2937',
-        lightGray: '#374151',
-        hoverGray: '#4B5563',
+        darkGray: '#355362',
+        lightGray: '#FFFCF1',
+        hoverGray: '#304D5C',
         white: '#FFFFFF',
-        teal: '#10B981',
+        lightTeal: '#a3ccd1',
+        teal: '#10a39e',
         nude: '#e6dcd2'
       }
     },
