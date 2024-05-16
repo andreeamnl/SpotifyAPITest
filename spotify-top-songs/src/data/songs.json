@@ -1,24 +1,50 @@
 [
-    {
-      "id": 1,
-      "title": "Song 1",
-      "artist": "Artist 1",
-      "duration": "3:45",
-      "cover": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 2,
-      "title": "Song 2",
-      "artist": "Artist 2",
-      "duration": "4:10",
-      "cover": "https://via.placeholder.com/150"
-    },
-    {
-      "id": 3,
-      "title": "Song 3",
-      "artist": "Artist 3",
-      "duration": "3:20",
-      "cover": "https://via.placeholder.com/150"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "I Don't Care",
+    "artist": "Apocalyptica, Adam Gontier",
+    "duration": "3:57"
+  },
+  {
+    "id": 2,
+    "title": "Teancuri",
+    "artist": "E lan",
+    "duration": "2:21"
+  },
+  {
+    "id": 3,
+    "title": "numărând victorii",
+    "artist": "Oscar",
+    "duration": "2:53"
+  },
+  {
+    "id": 4,
+    "title": "Despre Tine Cant (Part 2)",
+    "artist": "Dan Balan",
+    "duration": "4:03"
+  },
+  {
+    "id": 5,
+    "title": "older",
+    "artist": "Isabel LaRosa",
+    "duration": "2:18"
+  },
+  {
+    "id": 6,
+    "title": "We Still Don't Trust You",
+    "artist": "Future, Metro Boomin, The Weeknd",
+    "duration": "4:13"
+  },
+  {
+    "id": 7,
+    "title": "Break Stuff",
+    "artist": "Limp Bizkit",
+    "duration": "2:47"
+  },
+  {
+    "id": 8,
+    "artist": "Rammstein",
+    "title": "Armee der Tristen",
+    "duration": "3:26"
+  }
+]

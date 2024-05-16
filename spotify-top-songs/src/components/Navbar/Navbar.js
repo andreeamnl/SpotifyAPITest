@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Navbar = ({ onAddMusic }) => {
+const Navbar = () => {
   const [darkMode, setDarkMode] = useState(() => {
     // Get the initial dark mode state from local storage or default to false
     const savedDarkMode = localStorage.getItem('darkMode');
@@ -10,6 +10,9 @@ const Navbar = ({ onAddMusic }) => {
   // Update local storage when dark mode state changes
   useEffect(() => {
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    
+    // Set body background based on dark mode state
+    document.body.classList.toggle('dark', darkMode);
   }, [darkMode]);
 
   const handleToggleDarkMode = () => {
@@ -22,13 +25,7 @@ const Navbar = ({ onAddMusic }) => {
         <a href="/" className="text-teal text-xl font-bold">Playlistify</a>
         <div className="flex items-center">
           <button 
-            className={`bg-teal hover:bg-hoverGray text-white font-bold py-2 px-4 rounded ${darkMode ? 'dark' : 'light'}-mode-btn`}
-            onClick={onAddMusic}
-          >
-            Add Music
-          </button>
-          <button 
-            className="bg-teal hover:bg-hoverGray text-white font-bold py-2 px-4 rounded ml-4"
+            className="bg-teal hover:bg-hoverGray text-white font-bold py-2 px-4 rounded"
             onClick={handleToggleDarkMode}
           >
             {darkMode ? 'Light Mode' : 'Dark Mode'}
