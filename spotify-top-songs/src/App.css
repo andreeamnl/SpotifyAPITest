@@ -1,11 +1,11 @@
 .dark {
   background-color: #355362; /* darkGray */
-  color: #FFFFFF; /* Text color for dark mode */
+  color: #FFFCF1; /* Text color for dark mode */
 }
 
 .light {
   background-color: #FFFCF1; /* lightGray */
-  color: #000000; /* Text color for light mode */
+  color: #355362; /* Text color for light mode */
 }
 
 

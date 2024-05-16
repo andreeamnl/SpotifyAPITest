@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ toggleAbout }) => {
   const [darkMode, setDarkMode] = useState(() => {
     const savedDarkMode = localStorage.getItem('darkMode');
     return savedDarkMode ? JSON.parse(savedDarkMode) : false;
@@ -23,6 +23,12 @@ const Navbar = () => {
           <span className="mr-2">Playlistify</span>
         </a>
         <div className="flex items-center">
+          <button 
+            className="bg-teal hover:bg-hoverGray text-white font-bold py-2 px-4 rounded mr-4"
+            onClick={toggleAbout}
+          >
+            About
+          </button>
           <button 
             className="bg-teal hover:bg-hoverGray text-white font-bold py-2 px-4 rounded"
             onClick={handleToggleDarkMode}
