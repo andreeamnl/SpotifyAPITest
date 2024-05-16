@@ -2,9 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import Song from '../Song/Song'; 
+import Shuffle from '../Shuffle/Shuffle'; 
+
 import songsData from '../../data/songs'; 
 
 const Playlist = () => {
+    const handleShuffle = (shuffledPlaylist) => {
+        // Set the shuffled playlist in the component state
+        setPlaylist(shuffledPlaylist);
+    };
+    
   const [playlist, setPlaylist] = useState([]);
 
   useEffect(() => {
@@ -26,6 +33,7 @@ const Playlist = () => {
           My Daily Playlist
         </span>{' '}
       </h2>
+      <Shuffle onShuffle={handleShuffle} /> {/* Pass handleShuffle function as prop */}
       <ul>
         {playlist.map((song, index) => (
           <Song
