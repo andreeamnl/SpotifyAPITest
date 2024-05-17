@@ -5,12 +5,18 @@ import Shuffle from '../Shuffle/Shuffle';
 import songsData from '../../data/songs';
 
 const Playlist = () => {
+    const [playlist, setPlaylist] = useState([]);
+
+
     const handleShuffle = (shuffledPlaylist) => {
         // Set the shuffled playlist in the component state
         setPlaylist(shuffledPlaylist);
     };
+    const handleLike = (playlist) => {
+        // Set the shuffled playlist in the component state
+        setPlaylist(playlist);
+    };
 
-    const [playlist, setPlaylist] = useState([]);
 
     useEffect(() => {
         // Check if songs data exists in local storage
@@ -22,7 +28,9 @@ const Playlist = () => {
             setPlaylist(songsData);
             localStorage.setItem('playlist', JSON.stringify(songsData));
         }
-    }, []);
+    }, [playlist, setPlaylist]);
+
+    
 
     return (
         <div className="playlist bg-lightTeal text-black p-4 rounded-lg shadow-lg w-3/4 mx-auto">
@@ -33,11 +41,12 @@ const Playlist = () => {
             <ul>
                 {playlist.map((song, index) => (
                     <Song
-                        key={index}
+                        key={song.id}
                         title={song.title}
                         artist={song.artist}
                         duration={song.duration}
                         className="mb-4"
+                        onHandleLike={handleLike}
                     />
                 ))}
             </ul>
