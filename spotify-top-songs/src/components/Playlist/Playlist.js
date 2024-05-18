@@ -28,7 +28,7 @@ const Playlist = () => {
             setPlaylist(songsData);
             localStorage.setItem('playlist', JSON.stringify(songsData));
         }
-    }, [playlist, setPlaylist]);
+    }, []);
 
     
 
